@@ -41,29 +41,43 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* Утилити */
+
 .list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, p, ul   q {
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
 
-.list-link{
-    display: inline-block;
+.list-link {
+    display: block;
     text-decoration: none;
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
+}
+
+/* Main-nav */
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 /* Logo */
@@ -71,35 +85,43 @@ h1, h2, h3, p, ul   q {
 .link,
 .logo {
     text-decoration: none;
+    display: inline-block;
 }
 
 
 
-.logo, .web {
+.logo,
+.web {
+    display: inline-block;
+
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
 }
-.logo:hover{
+
+.logo:hover {
     color: var(--accent-color);
 }
+
 .logo {
     color: var(--black-logo);
 
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 
-/* LINK */
 
 /* Site nav */
+.site-nav {
+    display: flex;
+}
 
-.link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.site-nav .item+.item {
+    margin-left: 50px;
 }
 
 .site-nav .link.current {
@@ -107,8 +129,16 @@ h1, h2, h3, p, ul   q {
 }
 
 .site-nav .link {
+    display: block;
     color: var(--primary-text-color);
-    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
 .site-nav .link:hover,
@@ -119,11 +149,28 @@ h1, h2, h3, p, ul   q {
 
 /* Auth nav */
 
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
 .auth-nav .link {
+    display: block;
     color: var(--secondary-text-color);
 
-    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
+    margin-bottom: ;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
+.auth-nav .item+.item {
+    margin-left: 50px;
 }
 
 .auth-nav .link:hover,
@@ -131,10 +178,19 @@ h1, h2, h3, p, ul   q {
     color: var(--accent-color);
 }
 
+/* LINK */
+.link {
+    disp font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
 /* Hero */
 
-.hero, .hero-title {
+.hero,
+.hero-title {
+    
     color: var(--white-text);
     /* background: var(--primary-bgc); */
     font-weight: 900;
@@ -212,7 +268,17 @@ h1, h2, h3, p, ul   q {
 .feature {
     color: var(--primary-text-color);
 }
-.feature-title{
+
+.feature-item {
+
+    width: 270px;
+}
+
+.list .feature-item+.feature-item {
+    margin-left: 30px;
+}
+
+.feature-title {
     margin-bottom: 10px;
 
     color: var(--primary-text-color);
@@ -231,11 +297,10 @@ h1, h2, h3, p, ul   q {
 
 
 
-/* Section */
+/* Section Чим ми ... и Наша команда*/
 
-.section {
-    
-}
+.section {}
+
 .section-title {
     margin-bottom: 50px;
 
@@ -247,9 +312,17 @@ h1, h2, h3, p, ul   q {
 
 }
 
-.img-box {
+.box {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.list .list-img+.list-img {
+    margin-left: 30px;
+}
+
+.list .list-item+.list-item {
+    margin-left: 30px;
 }
 
 .team {
@@ -257,17 +330,21 @@ h1, h2, h3, p, ul   q {
 
 }
 
-.team-box {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .list-item {
     background: var(--white-text);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
 }
 
+.img {
+    margin-bottom: 30px;
+}
+
 .name {
+    margin-bottom: 10px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -276,6 +353,8 @@ h1, h2, h3, p, ul   q {
 }
 
 .work {
+    margin-bottom: 30px;
+
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -313,6 +392,11 @@ h1, h2, h3, p, ul   q {
     padding-bottom: 60px;
 }
 
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
 .studio {
     color: var(--white-text);
     font-family: 'Raleway';
@@ -327,9 +411,17 @@ h1, h2, h3, p, ul   q {
 }
 
 .address-text {
+    display: block;
+    margin-bottom: 9px;
+
     color: var(--white-text);
     font-size: 14px;
     line-height: 1.71;
+}
+
+.footer-mail {
+    display: block;
+    margin-bottom: 9px;
 }
 
 .footer-tel,
