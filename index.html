@@ -9,7 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -80,7 +82,7 @@
 
         <!-- Чим ми займаємося -->
         <section class="section">
-            <div class="container box">
+            <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="list">
                     <li class="list-img"> <img src="./images/laptop1.jpg" alt="ноутбук" width="370"></li>
@@ -93,41 +95,49 @@
 
         <!-- Наша команда -->
         <section class="section team">
-            <div class="container box">
+            <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list">
                     <li class="list-item">
 
-                        <img src="./images/ihor.jpg" alt="ihor" width="270" class="img" />
+                        <img src="./images/ihor.jpg" alt="ihor" width="270" />
+                        <div class="name-work">
+                            <p class="name">Ігор Дем'яненко</p>
+                            <p class="work">Product Designer</p>
+                        </div>
 
-                        <p class="name">Ігор Дем'яненко</p>
-                        <p class="work">Product Designer</p>
-
-
-                    </li>
-                    <li class="list-item">
-
-                        <img src="./images/olha2.jpg" alt="olha" width="270" class="img" />
-
-                        <p class="name">Ольга Рєпіна</p>
-                        <p class="work">Frontend Developer</p>
 
 
                     </li>
                     <li class="list-item">
 
-                        <img src="./images/mykola3.jpg" alt="mykola" width="270" class="img" />
+                        <img src="./images/olha2.jpg" alt="olha" width="270" />
+                        <div class="name-work">
+                            <p class="name">Ольга Рєпіна</p>
+                            <p class="work">Frontend Developer</p>
+                        </div>
 
-                        <p class="name">Микола Тарасов</p>
-                        <p class="work">Marketing</p>
+
 
                     </li>
                     <li class="list-item">
 
-                        <img src="./images/mykhailo.jpg" alt="mykhailo" width="270" class="img" />
+                        <img src="./images/mykola3.jpg" alt="mykola" width="270"/>
+                        <div class="name-work">
+                            <p class="name">Микола Тарасов</p>
+                            <p class="work">Marketing</p>
+                        </div>
 
-                        <p class="name">Михайло Єрмаков</p>
-                        <p class="work">UI Designer</p>
+
+                    </li>
+                    <li class="list-item">
+
+                        <img src="./images/mykhailo.jpg" alt="mykhailo" width="270" />
+                        <div class="name-work">
+                            <p class="name">Михайло Єрмаков</p>
+                            <p class="work">UI Designer</p>
+                        </div>
+
 
                     </li>
 
@@ -140,7 +150,7 @@
 
     <!-- Підвал -->
     <footer class="footer">
-        <div class="container footer-box">
+        <div class="container">
             <a href="./index.html" class="footer-logo"> <span class="web">Web</span><span class="studio">Studio</span>
             </a>
             <address class="address">
